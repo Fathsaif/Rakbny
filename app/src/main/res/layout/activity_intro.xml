@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".IntroActivity">
+
+<ImageView
+    android:id="@+id/img_logo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/logo_background"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginTop="@dimen/default_36"
+    />
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="sign up"
+        android:onClick="signupBtn"
+        app:layout_constraintTop_toBottomOf="@id/img_logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/logout_button_style"/>
+    <Button
+        android:id="@+id/btn_signin"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/rounded_button"
+        android:text="sing in"
+        android:onClick="signinBtn"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/btn_signup"
+        android:layout_marginTop="@dimen/default_24"
+        />
+</android.support.constraint.ConstraintLayout>
